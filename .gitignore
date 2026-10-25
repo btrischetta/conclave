@@ -1,0 +1,18 @@
+# Your keys and chats -- never commit these
+api_keys.json
+api_keys.json.lock
+*.unreadable-backup
+ai_history.json
+ai_history_archive.json
+*.lock
+*.corrupt
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local runtime output
+*.tmp
+*.log

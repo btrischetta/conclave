@@ -1,0 +1,5 @@
+streamlit==1.62.0
+openai==3.6.0
+anthropic==1.2.0
+google-genai==2.20.0
+pywin32==312

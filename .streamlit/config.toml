@@ -1,0 +1,17 @@
+# Conclave is a private, single-user, local-first app. It holds provider API
+# keys and complete conversation history, and it has no login of its own, so the
+# server must never listen on a routable interface: Streamlit's default
+# server.address binds every interface, which would publish Settings (including
+# the saved-key fields) to anyone on the same network.
+[server]
+address = "127.0.0.1"
+headless = true
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+serverAddress = "127.0.0.1"
+gatherUsageStats = false
+
+[theme]
+base = "dark"
